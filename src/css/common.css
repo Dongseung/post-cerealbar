@@ -1453,6 +1453,16 @@ footer p:last-child {
     height: 67.2rem;
     background: url(../img/modal-cbti-background2.png) no-repeat center center/contain;
     margin: 0 auto;
+    position: relative;
+}
+
+.modal-cbti2 .cbti-result .button-cbti-submit{
+    width: 15.1rem;
+    height: 7.7rem;
+    background: url(../img/icon-sns-share.png)no-repeat center center/contain;
+    position: absolute;
+    right: 1rem;
+    top: 15rem;
 }
 
 .modal-cbti2 .button-cbti-download {
@@ -1534,7 +1544,7 @@ footer p:last-child {
     margin-left: 0.4rem;
 }
 
-.modal-cbti2 .item .button-cbti-submit {
+.modal-cbti2 .item .button-buy {
     width: 20.8rem;
     height: 4.9rem;
     background: url(../img/modal-cbti-bottom-button.png) no-repeat left top/contain;
@@ -1613,6 +1623,46 @@ footer p:last-child {
 
 .modal-cbti2 .modal-cbti2-page16 .cbti-result {
     background: url(../img/modal-cbti-image16.png) no-repeat center center/contain;
+}
+
+/* 지금 구매하기 상품 이미지 추가 */
+
+.modal-cbti2 .item{
+    width: 100%;
+    height: 29rem;
+    position: relative;
+    padding-top: 3.5rem;
+    padding-left: 5.4rem;
+    margin-top: 8.5rem;
+}
+
+/* 핑크시리얼 */
+.modal-cbti2 .modal-cbti2-page1 .item,
+.modal-cbti2 .modal-cbti2-page8 .item,
+.modal-cbti2 .modal-cbti2-page12 .item,
+.modal-cbti2 .modal-cbti2-page14 .item {
+    background: url(../img/modal-cbti-bottom-image1.png) no-repeat no-repeat 33rem 4rem/26.6rem 19.6rem, #1663c1;
+}
+/* 파랑시리얼 */
+.modal-cbti2 .modal-cbti2-page2 .item,
+.modal-cbti2 .modal-cbti2-page7 .item,
+.modal-cbti2 .modal-cbti2-page9 .item,
+.modal-cbti2 .modal-cbti2-page15 .item {
+    background: url(../img/modal-cbti-bottom-image2.png) no-repeat no-repeat 33rem 4rem/25.8rem 19.6rem, #1663c1;
+}
+/* 밤색시리얼 */
+.modal-cbti2 .modal-cbti2-page3 .item,
+.modal-cbti2 .modal-cbti2-page5 .item,
+.modal-cbti2 .modal-cbti2-page11 .item,
+.modal-cbti2 .modal-cbti2-page13 .item {
+    background: url(../img/modal-cbti-bottom-image3.png) no-repeat no-repeat 33rem 4rem/25.8rem 19.6rem, #1663c1;
+}
+/* 검정시리얼 */
+.modal-cbti2 .modal-cbti2-page4 .item,
+.modal-cbti2 .modal-cbti2-page6 .item,
+.modal-cbti2 .modal-cbti2-page10 .item,
+.modal-cbti2 .modal-cbti2-page16 .item {
+    background: url(../img/modal-cbti-bottom-image4.png) no-repeat no-repeat 33rem 4rem/25.8rem 19.6rem, #1663c1;
 }
 
 .modal-iphone {
