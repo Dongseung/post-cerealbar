@@ -1613,6 +1613,7 @@ footer p:last-child {
     height: 4.9rem;
     background: url(../img/modal-cbti-bottom-button.png) no-repeat left top/contain;
     margin-top: 2.5rem;
+    display: block;
 }
 
 .modal-cbti2 .item .button-cbti-submit2 {
