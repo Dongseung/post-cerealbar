@@ -137,6 +137,7 @@ function modalCheck(modal, current, next) {
     } else {
         alert('참여가 완료 되었습니다.');
         modalNext(modal, current, next);
+        return true;
     }
 }
 
@@ -166,6 +167,8 @@ function hashtagCopy(dummyDiv) {
 }
 
 let cbtiTestArray = [];
+let cbtiResult = '';
+let cbtiType = '';
 
 function cbtiTest(button) {
 	cbtiTestArray[button.dataset.order - 1] = button.dataset.value;
@@ -176,7 +179,7 @@ function cbtiTest(button) {
 	}
 	if (button.dataset.order > 7) {
 		modalNext('.modal-cbti1', 'page' + button.dataset.order, 'loading');
-		let cbtiResult = '';
+		cbtiResult = '';
 		if (cbtiTestArray[0] === 'a') {
 			cbtiResult += 'E';
 		} else {
@@ -197,7 +200,7 @@ function cbtiTest(button) {
 		} else {
 			cbtiResult += 'P';
 		}
-		let cbtiType = '';
+		cbtiType = '';
 		switch(cbtiResult) {
 			case 'ISTJ':
 				cbtiType = '1';
@@ -250,12 +253,20 @@ function cbtiTest(button) {
 			default:
 				alert('오류 발생');
 		}
+		/*
 		function cbtiNext2() {
 			$('.modal-container.modal-cbti1').addClass('hidden');
 			$('.modal-page').addClass('hidden');
 			$('.modal-container.modal-cbti2').removeClass('hidden');
 			$('.modal-cbti2-page' + cbtiType).removeClass('hidden');
 			$('.modal-iphone .modal-content img').attr('src', 'src/img/modal-cbti-630-image' + cbtiType + '.jpg');
+		}
+		*/
+		function cbtiNext2() {
+			$('.modal-container.modal-cbti1').addClass('hidden');
+			$('.modal-page').addClass('hidden');
+			$('.modal-container.modal-event1').removeClass('hidden');
+			$('.modal-event1-page1').removeClass('hidden');
 		}
 		setTimeout(cbtiNext2, 1400);
 		return true;
@@ -352,7 +363,6 @@ $(window).scroll(function() {
 	fixedNav();
 });
 
-
 $('.button-event1').click(function() {
 	cbtiTestArray = [];
 	$('.cbti-pagination > li').removeClass('active');
@@ -386,7 +396,7 @@ $('.button-cbti-submit').click(function() {
 	$('.modal-container.modal-cbti2').addClass('hidden');
 	$('.modal-page').addClass('hidden');
 	$('.modal-container.modal-event1').removeClass('hidden');
-	$('.modal-event1-page1').removeClass('hidden');
+	$('.modal-event1-page2').removeClass('hidden');
 });
 
 $('.button-cbti-submit2').click(function() {
@@ -397,7 +407,13 @@ $('.button-cbti-submit2').click(function() {
 });
 
 $('.modal-event1-page1 .modal-submit').click(function() {
-	modalCheck('.modal-event1', 'page1', 'page2');
+	if (modalCheck('.modal-event1', 'page1', 'page2') === true) {
+		$('.modal-container.modal-event1').addClass('hidden');
+		$('.modal-page').addClass('hidden');
+		$('.modal-container.modal-cbti2').removeClass('hidden');
+		$('.modal-cbti2-page' + cbtiType).removeClass('hidden');
+		$('.modal-iphone .modal-content img').attr('src', 'src/img/modal-cbti-630-image' + cbtiType + '.jpg');
+	}
 });
 
 $('.modal-event1-page2 .modal-submit').click(function() {
