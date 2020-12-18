@@ -1539,9 +1539,73 @@ footer p:last-child {
 .modal-cbti2 .item p {
     width: 24.6rem;
     height: 7.6rem;
-    background: url(../img/modal-cbti-bottom-text1.png) no-repeat left top/contain;
     margin-top: 2rem;
     margin-left: 0.4rem;
+}
+
+/* 20201218 텍스트 변경 */
+.modal-cbti2 .modal-cbti2-page1 .item p{
+    background: url(../img/modal-cbti-bottom-text1.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page2 .item p{
+    background: url(../img/modal-cbti-bottom-text2.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page3 .item p{
+    background: url(../img/modal-cbti-bottom-text3.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page4 .item p{
+    background: url(../img/modal-cbti-bottom-text4.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page5 .item p{
+    background: url(../img/modal-cbti-bottom-text5.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page6 .item p{
+    background: url(../img/modal-cbti-bottom-text6.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page7 .item p{
+    background: url(../img/modal-cbti-bottom-text7.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page8 .item p{
+    background: url(../img/modal-cbti-bottom-text8.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page9 .item p{
+    background: url(../img/modal-cbti-bottom-text9.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page10 .item p{
+    background: url(../img/modal-cbti-bottom-text10.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page11 .item p{
+    background: url(../img/modal-cbti-bottom-text11.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page12 .item p{
+    background: url(../img/modal-cbti-bottom-text12.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page13 .item p{
+    background: url(../img/modal-cbti-bottom-text13.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page14 .item p{
+    background: url(../img/modal-cbti-bottom-text14.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page15 .item p{
+    background: url(../img/modal-cbti-bottom-text15.png) no-repeat left top/contain;
+}
+
+.modal-cbti2 .modal-cbti2-page16 .item p{
+    background: url(../img/modal-cbti-bottom-text16.png) no-repeat left top/contain;
 }
 
 .modal-cbti2 .item .button-buy {
